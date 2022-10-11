@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="player.css">
+    <script src="player.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="player1"></div>
+      <div id="player2"></div>
+
+      <div id="ad1" class="ad">
+        <a href="www.ad1.com" target="_blank">This is Ad#1</a>
+      </div>
+    </div>
+    <script>
+      initVideoPlayer({
+        target: "player1",
+        source: "http://www.w3schools.com/html/mov_bbb.mp4",
+        
+      })
+      initVideoPlayer({
+        target: "player2",
+        source: "https://static.videezy.com/system/resources/previews/000/035/849/original/WL057.mp4",
+        adTarget: "ad1",
+        adSeconds: 4,
+        adDuration: 10
+      })
+    </script>
+  </body>
+</html>

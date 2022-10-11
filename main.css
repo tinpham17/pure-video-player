@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.ad {
+  background: #fff;
+  padding: 16px;
+  width: auto;
+  width: max-content;
+}
+.hidden {
+  display: none;
+}
